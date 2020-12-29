@@ -170,6 +170,12 @@ input[type='text'] {
     border-radius: 50%;
 }
 
+.single-meal:hover {
+    outline: 10px solid var(--secondary-color);
+    margin: 40px;
+    padding: 20px;
+}
+
 .single-meal-info {
     margin: 20px;
     border-radius: 5px; 
@@ -219,11 +225,58 @@ input[type='text'] {
         height: 200px;
         width: 200px;
     }
+
+    input[type='text'] {
+        width: 200px;
+    }
+
+    .alert h3 {
+        padding-top: 150px;
+    }
+
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    .container {
+        padding-top: 130px;
+    }
+
+    .single-meal {
+        width: 90%;
+    }
+
+    .single-meal img {
+        width: 220px;
+    }
+
+    .main p {
+        margin: 10px;
+        word-spacing: 0;
+    }
+
+    .single-meal ul li {
+        display: block;
+    }
 }
 
 @media (max-width: 500px){
     input[type='text'] {
         width: 100%;
+    }
+
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    .container {
+        padding-top: 130px;
     }
 
     .meals {
@@ -233,5 +286,27 @@ input[type='text'] {
     .meal {
         height: 300px;
         width: 300px;
+    }
+
+    .single-meal {
+        width: 100%;
+    }
+
+    .single-meal h1 {
+        font-size: 20px;
+    }
+
+    .single-meal img {
+        width: 180px;
+        border-radius: 5px;
+    }
+
+    .main p {
+        margin: 30px;
+        word-spacing: 0;
+    }
+
+    .single-meal ul li {
+        display: block;
     }
 }
